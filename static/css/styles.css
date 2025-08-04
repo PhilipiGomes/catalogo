@@ -1,159 +1,156 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background-color: white;
-    padding-top: 60px;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: white;
+  padding-top: 60px;
 }
 
 nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #333;
-    z-index: 999;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  z-index: 999;
 }
 
 nav ul {
-    display: flex;
-    justify-content: center;
-    background-color: #333;
-    margin: 0;
-    list-style: none;
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+  margin: 0;
+  list-style: none;
 }
 
 nav li {
-    margin: 0 10px;
+  margin: 0 10px;
 }
 
 nav a {
-    display: block;
-    padding: 14px;
-    color: white;
-    text-decoration: none;
+  display: block;
+  padding: 14px;
+  color: white;
+  text-decoration: none;
 }
 
 nav a:hover {
-    background-color: #555;
-    text-decoration: underline;
-    color: rgb(78, 117, 189);
+  background-color: #555;
+  text-decoration: underline;
+  color: rgb(78, 117, 189);
 }
 
 header {
-    background-color: #ffffff;
+  background-color: #ffffff;
 }
 
 section {
-    padding: 20px;
-    max-width: 800px;
-    margin: auto;
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
 }
 
 .produtos {
-    gap: 20px;
-    flex-wrap: wrap;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 .produto {
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
-    width: 350px;
-    text-align: center;
-    cursor: pointer;
-    transition: 0.4s;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+  width: 350px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.4s;
 }
 
 .produto:hover {
-    transform: scale(1.04);
+  transform: scale(1.04);
 }
 
 .produto img {
-    width: 350px;
+  width: 350px;
 }
 
 form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    background-color: white;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 0 6px rgba(92, 92, 92);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 6px rgba(92, 92, 92);
 }
 
 input,
 textarea {
-    padding: 8px;
-    font-size: 14px;
+  padding: 8px;
+  font-size: 14px;
 }
 
 button {
-    background-color: #b0ccee;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 8px;
-    font-weight: bold;
-    font-size: 14px;
+  background-color: #b0ccee;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 14px;
 }
 
 button:hover {
-    background-color: #8fb8eb;
+  background-color: #8fb8eb;
 }
 
 /*Modal*/
 .modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.15);
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.15);
 }
 
 .modal-conteudo {
-    background-color: white;
-    margin: 15% auto;
-    padding: 20px;
-    max-width: 400px;
-    border-radius: 8px;
-    position: relative;
+  background-color: white;
+  margin: 15% auto;
+  padding: 20px;
+  max-width: 400px;
+  border-radius: 8px;
+  position: relative;
 }
 
 .fechar {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
 }
 
 .fechar:hover {
-    color: red;
-    transform: scale(1.05);
+  color: red;
+  transform: scale(1.05);
 }
 
-/* Carrossel */
-
-
 #btntopo {
-    display: none;
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    z-index: 1000;
-    font-size: 25px;
-    padding: 9px 20px;
-    background-color: #8fb8eb;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-    transition: background-color 0.3s ease, transform 0.4s;
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 1000;
+  font-size: 25px;
+  padding: 9px 20px;
+  background-color: #8fb8eb;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease, transform 0.4s;
 }
 
 #btntopo:hover {
-    transform: scale(1.1);
-    background-color: #b0ccee;
+  transform: scale(1.1);
+  background-color: #b0ccee;
 }
